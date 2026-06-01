@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Letícia Braga Beauty Studio | Paracambi RJ</title>
+
+<meta name="description" content="Especialista em alisamentos, mechas no papel e tratamentos capilares personalizados em Paracambi-RJ.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#B76E79;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(to right,#fff,#fff5f7);
+    padding-top:100px;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#B76E79;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:25px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:#B76E79;
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.about{
+    background:#fafafa;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#B76E79;
+    margin-bottom:15px;
+}
+
+.gallery{
+    background:#fff5f7;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.placeholder{
+    height:250px;
+    border:2px dashed #B76E79;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#B76E79;
+    padding:20px;
+}
+
+.instagram{
+    text-align:center;
+}
+
+.instagram a{
+    color:#B76E79;
+    font-size:22px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.contact{
+    background:#fafafa;
+}
+
+.contact-box{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-box p{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero-content{
+    grid-template-columns:1fr;
+}
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+.menu{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+
+<nav>
+
+<div class="logo">
+Letícia Braga Beauty Studio
+</div>
+
+<div class="menu">
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#galeria">Galeria</a>
+<a href="#contato">Contato</a>
+</div>
+
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-text">
+
+<h1>Transformando cabelos. Elevando autoestima.</h1>
+
+<p>
+Especialista em alisamentos, mechas no papel e tratamentos capilares personalizados.
+Atendimento exclusivo em Paracambi-RJ com horário agendado.
+</p>
+
+<a href="https://wa.me/5521967316570" target="_blank" class="btn">
+Agendar pelo WhatsApp
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<!-- Substitua pela foto da Letícia -->
+<img src="leticia.jpg" alt="Letícia Braga">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="sobre" class="about">
+
+<div class="container">
+
+<h2 class="section-title">Sobre Letícia Braga</h2>
+
+<div class="about-content">
+
+<p>
+Prazer, sou Letícia Braga.
+</p>
+
+<p>
+Empreendedora apaixonada por transformar cabelos e elevar a autoestima das minhas clientes.
+Especialista em alisamentos, mechas e tratamentos personalizados.
+</p>
+
+<p>
+Meu compromisso é oferecer atendimento humanizado, técnicas atualizadas e protocolos específicos para cada necessidade.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="servicos">
+
+<div class="container">
+
+<h2 class="section-title">Serviços</h2>
+
+<div class="services-grid">
+
+<div class="card">
+<h3>✨ Alisamento Profissional</h3>
+<p>Fios alinhados, saudáveis e com brilho.</p>
+</div>
+
+<div class="card">
+<h3>✨ Mechas no Papel</h3>
+<p>Iluminação personalizada e sofisticada.</p>
+</div>
+
+<div class="card">
+<h3>✨ Tratamentos Capilares</h3>
+<p>Protocolos exclusivos para recuperação dos fios.</p>
+</div>
+
+<div class="card">
+<h3>✨ Consultoria Capilar</h3>
+<p>Plano de tratamento específico para cada cliente.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria" class="gallery">
+
+<div class="container">
+
+<h2 class="section-title">Galeria</h2>
+
+<div class="gallery-grid">
+
+<div class="placeholder">
+Espaço reservado para fotos de trabalhos
+</div>
+
+<div class="placeholder">
+Antes e Depois
+</div>
+
+<div class="placeholder">
+Mechas e Transformações
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="instagram">
+
+<div class="container">
+
+<h2 class="section-title">Instagram</h2>
+
+<p>Acompanhe os trabalhos e novidades.</p>
+
+<br>
+
+<a href="https://www.instagram.com/leticia.braga.santos_hair" target="_blank">
+@leticia.braga.santos_hair
+</a>
+
+</div>
+
+</section>
+
+<section id="contato" class="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contato</h2>
+
+<div class="contact-box">
+
+<p><strong>📍 Local:</strong> Paracambi - RJ</p>
+
+<p><strong>📅 Atendimento:</strong> Terça a Sábado</p>
+
+<p><strong>⏰ Horário:</strong> 09h00 às 20h00</p>
+
+<p><strong>📱 WhatsApp:</strong> (21) 96731-6570</p>
+
+<br>
+
+<a href="https://wa.me/5521967316570" target="_blank" class="btn">
+Agendar Agora
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Letícia Braga Beauty Studio</p>
+
+<p>Todos os direitos reservados.</p>
+
+</footer>
+
+<a href="https://wa.me/5521967316570" target="_blank" class="whatsapp">
+📱
+</a>
+
+</body>
+</html>

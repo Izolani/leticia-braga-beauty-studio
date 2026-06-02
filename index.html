@@ -87,7 +87,12 @@ nav{
     color:#B76E79;
     margin-bottom:20px;
 }
-
+.hero-text h2{
+    font-size:28px;
+    font-weight:300;
+    color:#555;
+    margin-bottom:25px;
+}
 .hero-text p{
     font-size:18px;
     margin-bottom:25px;
@@ -227,7 +232,24 @@ footer{
     font-size:30px;
     box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
 
+.galeria img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.galeria img:hover{
+    transform:scale(1.03);
+}
 @media(max-width:768px){
 
 .hero-content{
@@ -280,7 +302,9 @@ Letícia Braga Beauty Studio
 
 <div class="hero-text">
 
-<h1>Transformando cabelos. Elevando autoestima.</h1>
+<h1>Letícia Braga Beauty Studio</h1>
+
+<h2>Transformando cabelos. Elevando autoestima.</h2>
 
 <p>
 Especialista em alisamentos, mechas no papel e tratamentos capilares personalizados.
@@ -296,7 +320,7 @@ Agendar pelo WhatsApp
 <div class="hero-image">
 
 <!-- Substitua pela foto da Letícia -->
-<img src="leticia.jpg" alt="Letícia Braga">
+<img src="imagens/leticia.jpg" alt="Letícia Braga">
 
 </div>
 
@@ -371,22 +395,27 @@ Meu compromisso é oferecer atendimento humanizado, técnicas atualizadas e prot
 
 <h2 class="section-title">Galeria</h2>
 
-<div class="gallery-grid">
+<div class="galeria">
 
-<div class="placeholder">
-Espaço reservado para fotos de trabalhos
+<img src="imagens/alisamento1.jpeg" alt="Alisamento">
+<img src="imagens/alisamento2.jpeg" alt="Alisamento">
+<img src="imagens/alisamento3.jpeg" alt="Alisamento">
+
+<img src="imagens/antes-das-mechas1.jpeg" alt="Antes das Mechas">
+
+<img src="imagens/antes-do-alisamento1.jpeg" alt="Antes do Alisamento">
+
+<img src="imagens/antes-do-alisamento2.jpeg" alt="Antes do Alisamento">
+
+<img src="imagens/depois-das-mechas1.jpeg" alt="Depois das Mechas">
+
+<img src="imagens/tratamento-pos-coloracao1.jpeg"
+alt="Tratamento Pós Coloração">
+
+<img src="imagens/tratamento-pos-mechas1.jpeg"
+alt="Tratamento Pós Mechas">
+
 </div>
-
-<div class="placeholder">
-Antes e Depois
-</div>
-
-<div class="placeholder">
-Mechas e Transformações
-</div>
-
-</div>
-
 </div>
 
 </section>
